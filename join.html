@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Quiz - QuizWizard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      min-height: 100vh;
+      background: linear-gradient(to bottom, var(--secondary), var(--primary));
+    }
+    
+    .join-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    .join-content {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    
+    .join-card {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      width: 100%;
+      max-width: 24rem;
+    }
+    
+    .join-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .join-logo {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .join-form input {
+      display: block;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 0.25rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    .join-form input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(34, 185, 148, 0.1);
+    }
+    
+    .join-form button {
+      display: block;
+      width: 100%;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    
+    .join-form button:hover {
+      background-color: var(--primary-hover);
+    }
+    
+    .join-back {
+      text-align: center;
+    }
+    
+    .join-back a {
+      color: var(--primary);
+    }
+    
+    .join-back a:hover {
+      text-decoration: underline;
+    }
+    
+    .join-footer {
+      text-align: center;
+      padding: 1rem;
+      color: white;
+    }
+    
+    .join-footer h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .join-footer p {
+      font-size: 0.875rem;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+  <div class="join-container">
+    <div class="join-content">
+      <div class="join-card">
+        <div class="join-header">
+          <div class="join-logo">
+            <div class="logo-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+          </div>
+          <h1>Join Quiz</h1>
+          <p>Enter your nickname and the quiz PIN to join</p>
+        </div>
+        
+        <form class="join-form" onsubmit="return handleSubmit(event)">
+          <input 
+            type="text" 
+            id="quiz-pin"
+            placeholder="Quiz PIN" 
+            required
+          />
+          
+          <input 
+            type="text" 
+            id="nickname"
+            placeholder="Your nickname" 
+            required
+          />
+          
+          <button type="submit">Join Game</button>
+        </form>
+        
+        <div class="join-back">
+          <a href="index.html">Back to Home</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="join-footer">
+      <h2>Quiz Wizard</h2>
+      <p>Create and share interactive quizzes</p>
+    </div>
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      
+      const pin = document.getElementById('quiz-pin').value;
+      const nickname = document.getElementById('nickname').value;
+      
+      // For demonstration, just log the values
+      console.log('Joining quiz with PIN:', pin, 'and nickname:', nickname);
+      
+      // In a real app, you would submit to a server here
+      alert(`Joining quiz ${pin} as ${nickname}`);
+      
+      return false;
+    }
+  </script>
+</body>
+</html>

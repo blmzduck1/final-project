@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - QuizWizard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .about-hero {
+      background-color: #f9fafb;
+      padding: 4rem 0;
+      text-align: center;
+    }
+    
+    .about-story {
+      padding: 4rem 0;
+    }
+    
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    
+    .mission-card {
+      background-color: #f9fafb;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      text-align: center;
+    }
+    
+    .trusted-by {
+      padding: 4rem 0;
+      text-align: center;
+      background-color: white;
+    }
+    
+    .org-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .org-item {
+      background-color: #f9fafb;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .org-item span {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #6b7280;
+    }
+    
+    @media (min-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .org-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <div class="logo">
+          <a href="index.html">
+            <div class="logo-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <span class="logo-text">QuizWizard</span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="discover.html">Discover</a>
+          <a href="create.html">Create</a>
+          <a href="join.html">Join</a>
+          <a href="about.html" class="active">About</a>
+        </div>
+        <div class="nav-actions">
+          <div class="search-box">
+            <input type="text" placeholder="Search quizzes...">
+            <i class="fas fa-search"></i>
+          </div>
+          <a href="login.html" class="login-link">Login</a>
+          <a href="signup.html" class="signup-btn">Sign Up</a>
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="about-hero">
+      <div class="container">
+        <h1>About Quiz Wizard</h1>
+        <p class="section-description">
+          Quiz Wizard is a powerful platform for creating engaging, interactive quizzes for education, 
+          training, team building, or just for fun. Our mission is to make learning more enjoyable and effective through interactive experiences.
+        </p>
+      </div>
+    </div>
+    
+    <div class="about-story">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <h2>Our Story</h2>
+            <p class="mb-4">
+              Quiz Wizard was founded in 2022 by a team of educators and technology enthusiasts who recognized 
+              the need for better engagement tools in educational settings.
+            </p>
+            <p class="mb-4">
+              What started as a simple tool for classroom quizzes has evolved into a comprehensive platform 
+              used by teachers, corporate trainers, event organizers, and content creators worldwide.
+            </p>
+            <p>
+              Today, Quiz Wizard is trusted by over 50,000 educators and trainers across the globe, helping 
+              them create engaging learning experiences that students and participants love.
+            </p>
+          </div>
+          <div class="mission-card">
+            <div class="mission-icon">
+              <div class="logo-icon" style="margin: 0 auto 1rem; width: 4rem; height: 4rem; font-size: 1.5rem;">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+            </div>
+            <h3>Our Mission</h3>
+            <p>
+              To transform learning experiences through interactive, engaging, and accessible quiz technology 
+              that educators love to use and learners enjoy participating in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="features">
+      <div class="container">
+        <h2>Why Choose Quiz Wizard?</h2>
+        <p class="section-description">
+          Our platform makes it simple to create engaging, interactive quizzes for any purpose.
+        </p>
+        
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon bg-purple-500">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Easy to Create</h3>
+            <p>Build beautiful quizzes with our intuitive editor - no technical skills required.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon bg-yellow">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Real-time Engagement</h3>
+            <p>Interactive quizzes with timers, points, and instant feedback for maximum engagement.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon bg-blue">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Leaderboards</h3>
+            <p>Motivate participants with real-time rankings and competitive leaderboards.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon bg-primary">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h3>Multiple Question Types</h3>
+            <p>Create diverse quizzes with multiple choice, true/false, polls, and more.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon bg-teal">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Detailed Analytics</h3>
+            <p>Gain insights with comprehensive reports on participation and performance.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon bg-red">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Multiplayer Experience</h3>
+            <p>Support for unlimited participants joining via smartphone, tablet, or computer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="trusted-by">
+      <div class="container">
+        <h2>Trusted by Educators Worldwide</h2>
+        <div class="org-grid">
+          <div class="org-item">
+            <span>Harvard University</span>
+          </div>
+          <div class="org-item">
+            <span>Microsoft</span>
+          </div>
+          <div class="org-item">
+            <span>Google</span>
+          </div>
+          <div class="org-item">
+            <span>Khan Academy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Create Your First Interactive Quiz?</h2>
+        <p>
+          Join thousands of educators, trainers, and quiz enthusiasts who are creating engaging learning experiences with Quiz Wizard.
+        </p>
+        <div class="cta-buttons">
+          <a href="create.html" class="btn btn-white">
+            Create Your First Quiz 
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="contact.html" class="btn btn-outline-white">
+            Contact Sales
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <span class="logo-text">QuizWizard</span>
+          </div>
+          <p>Create and share interactive quizzes for education, training, or fun.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="templates.html">Templates</a></li>
+              <li><a href="customers.html">Customers</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="guides.html">Guides</a></li>
+              <li><a href="help.html">Help Center</a></li>
+              <li><a href="webinars.html">Webinars</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+              <li><a href="licenses.html">Licenses</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 QuizWizard. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
